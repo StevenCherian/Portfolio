@@ -117,10 +117,6 @@ p {
     position: relative;
 }
 
-a:hover {
-    border-bottom-color: transparent;
-}
-
 ul {
     list-style: disc;
     margin: 2rem 0 2rem 0;
@@ -160,7 +156,26 @@ ul.icons li a:hover {
     transform:scale(1.1);
 }
 
+button {
+    color: white;
+    background: rgba(255,0,0,0);
+    border-radius: 6px;
+    border: 1px solid white;
+    transition: 0.2s;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
 
-ul.icons li a:active {
-    background-color: rgba(255, 255, 255, 0.175);
+#aboutButton {
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 0.2rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#aboutButton:hover {
+    transform:scale(1.05);
 }

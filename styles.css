@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     margin: 0;
 	background-color: #000000;
+    font-family: "Poppins", sans-serif;
 }
 
 .li:before {
@@ -177,6 +178,62 @@ button {
 }
 
 #aboutButton:hover {
-    transform:scale(1.1);
+    transform:scale(1.05);
     cursor:pointer;
+}
+
+a {
+    margin: 0px 30px 0px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    transition: 0.3s;
+    font-weight: 500;
+    color: white;
+}
+
+nav {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.nav-items {
+    padding-bottom: 2px;
+}
+
+#active {
+    border-bottom: 2px solid;
+}
+
+.nav {
+    animation: navfadeIn ease-in-out 0.5s;
+    -webkit-animation: navfadeIn ease-in-out 0.5s;
+    -moz-animation: navfadeIn ease-in-out 0.5s;
+    -o-animation: navfadeIn ease-in-out 0.5s;
+    -ms-animation: navfadeIn ease-in-out 0.5s;
+  }
+  
+@keyframes navfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-moz-keyframes navfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-webkit-keyframes navfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-o-keyframes navfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-ms-keyframes navfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }

@@ -3,7 +3,6 @@
 body {
     width: 100%;
     overflow-x: hidden;
-    margin: 0;
 	background-color: #000000;
     font-family: "Poppins", sans-serif;
 }
@@ -108,7 +107,7 @@ p {
 
 .header {
     margin: 0 auto;
-    padding-top: 25vh;
+    padding-top: 20vh;
     text-align: center;
 }
 
@@ -130,13 +129,9 @@ ul.icons {
     padding-left: 0;
 }
 
-ul.icons li:last-child {
-    padding-right: 0;
-}
-
 ul.icons li {
     display: inline-block;
-    padding: 0 0.5em 0 0;
+    margin: 0px 20px 0 20px;
 }
 
 ul.icons li a {
@@ -183,12 +178,10 @@ button {
 }
 
 a {
-    margin: 0px 30px 0px 30px;
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
-    transition: 0.3s;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
 }
 
@@ -199,19 +192,28 @@ nav {
 
 .nav-items {
     padding-bottom: 2px;
+    margin-block: auto;
 }
 
 #active {
     border-bottom: 2px solid;
 }
 
+nav a:hover {
+    transform:scale(1.1);
+}
+
 .nav {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 600px;
+    padding-top: 20px;
     animation: navfadeIn ease-in-out 0.5s;
     -webkit-animation: navfadeIn ease-in-out 0.5s;
     -moz-animation: navfadeIn ease-in-out 0.5s;
     -o-animation: navfadeIn ease-in-out 0.5s;
     -ms-animation: navfadeIn ease-in-out 0.5s;
-  }
+}
   
 @keyframes navfadeIn {
     0% {opacity:0;}
@@ -234,6 +236,44 @@ nav {
 }
   
 @-ms-keyframes navfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.aboutHeader {
+    margin: 0 auto;
+    padding-top: 70px; 
+    padding-right: 40px;
+    text-align: center;
+    max-width: 700px;
+    animation: contentfadeIn ease-in-out 2s;
+    -webkit-animation: contentfadeIn ease-in-out 2s;
+    -moz-animation: contentfadeIn ease-in-out 2s;
+    -o-animation: contentfadeIn ease-in-out 2s;
+    -ms-animation: contentfadeIn ease-in-out 2s;
+}
+  
+@keyframes contentfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-moz-keyframes contentfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-webkit-keyframes contentfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-o-keyframes contentfadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-ms-keyframes contentfadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
 }

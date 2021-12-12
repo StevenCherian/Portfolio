@@ -320,6 +320,20 @@ nav a:hover {
     width: 50%;
 }
 
+.visit-button {
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    padding: 7px 20px 7px 20px;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.visit-button:hover {
+    transform:scale(1.05);
+    cursor:pointer;
+}
+
 @media only screen and (max-width: 765px) { 
     ul.icons {
         display: flex;

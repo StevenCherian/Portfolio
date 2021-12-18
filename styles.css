@@ -205,11 +205,12 @@ nav a:hover {
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-flow: nowrap;
     width: 100%;
     text-align: center;
     align-items: center;
-    padding: 15px 2% 0px 2%;
+    padding: 2% 2% 0% 2%;
     animation: navfadeIn ease-in-out 0.5s;
     -webkit-animation: navfadeIn ease-in-out 0.5s;
     -moz-animation: navfadeIn ease-in-out 0.5s;
@@ -338,8 +339,7 @@ nav a:hover {
 @media only screen and (max-width: 765px) { 
     ul.icons {
         display: flex;
-        justify-content: end;
-        padding-left: 10px;
+        justify-content: space-around;
     }
 
     .inner-content p {
@@ -351,6 +351,10 @@ nav a:hover {
         padding-left: 0px;
         padding-top: 25px;;
         margin: 25px;
+    }
+
+    .nav {
+        padding: 2% 0% 0% 0%;
     }
     
     p {

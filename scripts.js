@@ -10,8 +10,11 @@ const close = document.querySelector('.close');
 
 videoButton.addEventListener('click', () => {
     videoContainer.classList.add('show');
+    document.getElementById('video').play();
 })
 
 close.addEventListener('click', () => {
     videoContainer.classList.remove('show');
+    document.getElementById('video').pause();
+
 })

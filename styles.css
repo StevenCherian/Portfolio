@@ -410,10 +410,13 @@ nav a:hover {
 
 .video-container .close {
     position: absolute;
-    top: 10%;
-    right: 25px;
+    top: 20%;
+    right: 5%;
+    font-size: 25px;
     cursor: pointer;
     color: white;
+    border-block-end: 3px solid black;
+
 }
 
 .video-container video {
